@@ -1,0 +1,6 @@
+streamlit>=1.35
+pandas>=2.2
+openai>=1.30
+
+# Dev / testing (not required for the app to run)
+# pytest>=8.0

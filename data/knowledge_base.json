@@ -1,0 +1,232 @@
+{
+  "version": "1.0",
+  "glossary": [
+    {
+      "term": "Phishing",
+      "definition": "A fraudulent attempt to obtain sensitive information (such as usernames, passwords, or credit card details) by disguising oneself as a trustworthy entity in electronic communications.",
+      "analogy": "Like a fisherman casting bait — the attacker sends out many fake messages hoping someone will 'bite' and hand over their details.",
+      "examples": ["Fake bank emails asking you to verify your account", "SMS messages claiming your package is delayed with a suspicious link"],
+      "related": ["Spear Phishing", "Smishing", "Vishing", "Whaling"],
+      "severity": "high"
+    },
+    {
+      "term": "Spear Phishing",
+      "definition": "A targeted phishing attack directed at a specific individual or organisation, often using personalised information to appear more convincing.",
+      "analogy": "Unlike regular phishing (casting a wide net), spear phishing is like a sniper — the attacker researches you specifically to craft a convincing fake.",
+      "examples": ["Email appearing to come from your CEO asking for an urgent wire transfer", "Message referencing your recent purchase to seem legitimate"],
+      "related": ["Phishing", "Whaling", "Social Engineering"],
+      "severity": "critical"
+    },
+    {
+      "term": "Smishing",
+      "definition": "Phishing conducted via SMS text messages. The attacker sends fake texts to trick victims into clicking malicious links or revealing personal information.",
+      "analogy": "The same trick as email phishing, but through your text messages.",
+      "examples": ["'Your bank account has been suspended — verify now' texts", "Fake delivery notification SMS with a link"],
+      "related": ["Phishing", "Vishing"],
+      "severity": "high"
+    },
+    {
+      "term": "Ransomware",
+      "definition": "Malicious software that encrypts a victim's files and demands payment (a ransom) in exchange for the decryption key to restore access.",
+      "analogy": "Like a digital kidnapping — criminals lock up your files and demand money to release them.",
+      "examples": ["WannaCry attack (2017) that paralysed the NHS", "CryptoLocker encrypting business documents"],
+      "related": ["Malware", "Phishing", "Backup"],
+      "severity": "critical"
+    },
+    {
+      "term": "Malware",
+      "definition": "Short for 'malicious software' — any software intentionally designed to cause disruption, damage, or gain unauthorised access to a computer system.",
+      "analogy": "Like a disease for your computer — it can make your device sick, slow it down, steal information, or even hand control to an attacker.",
+      "examples": ["Viruses", "Trojans", "Spyware", "Ransomware", "Adware"],
+      "related": ["Ransomware", "Spyware", "Trojan", "Antivirus"],
+      "severity": "high"
+    },
+    {
+      "term": "Two-Factor Authentication (2FA)",
+      "definition": "A security method that requires two different forms of identity verification before granting access — typically something you know (password) and something you have (phone).",
+      "analogy": "Like a bank vault with two keys — you need both to open it. Even if a thief steals one key, they still can't get in without the second.",
+      "examples": ["Entering a password, then a code sent to your phone", "Password + authenticator app code (e.g., Google Authenticator)"],
+      "related": ["MFA", "Password", "Authentication"],
+      "severity": "low"
+    },
+    {
+      "term": "Multi-Factor Authentication (MFA)",
+      "definition": "A security system that requires users to verify their identity using two or more independent factors before gaining access.",
+      "analogy": "Like a three-lock door — each lock is a different type of key.",
+      "examples": ["Password + SMS code + fingerprint", "PIN + smart card + face recognition"],
+      "related": ["2FA", "Password", "Biometrics"],
+      "severity": "low"
+    },
+    {
+      "term": "Social Engineering",
+      "definition": "Psychological manipulation of people into performing actions or divulging confidential information. It exploits human psychology rather than technical vulnerabilities.",
+      "analogy": "Like a con artist — instead of picking a lock, they convince someone to open the door for them.",
+      "examples": ["Pretending to be IT support to get your password", "Creating urgency to make someone act without thinking"],
+      "related": ["Phishing", "Pretexting", "Baiting", "Vishing"],
+      "severity": "high"
+    },
+    {
+      "term": "VPN (Virtual Private Network)",
+      "definition": "A technology that creates an encrypted, secure tunnel for your internet connection, hiding your IP address and protecting your data from eavesdroppers.",
+      "analogy": "Like sending your internet traffic through a private, armoured tunnel instead of an open road — no one can see what's inside.",
+      "examples": ["Using a VPN on public Wi-Fi at a coffee shop", "Accessing company resources securely from home"],
+      "related": ["Encryption", "Privacy", "Public Wi-Fi"],
+      "severity": "low"
+    },
+    {
+      "term": "Data Breach",
+      "definition": "An incident where confidential or protected information is accessed, disclosed, or stolen without authorisation.",
+      "analogy": "Like a thief breaking into a filing cabinet and stealing copies of everyone's personal records.",
+      "examples": ["LinkedIn breach exposing 700 million users' data (2021)", "Yahoo breach affecting 3 billion accounts"],
+      "related": ["Identity Theft", "Password", "Have I Been Pwned"],
+      "severity": "high"
+    },
+    {
+      "term": "Password Manager",
+      "definition": "A software application that generates, stores, and retrieves complex passwords for you, protected behind a single master password.",
+      "analogy": "Like a secure keychain that holds all your keys — you only need to remember one master key to access the rest.",
+      "examples": ["Bitwarden (free)", "1Password", "Dashlane", "KeePass"],
+      "related": ["Password", "Encryption", "2FA"],
+      "severity": "low"
+    },
+    {
+      "term": "Firewall",
+      "definition": "A network security system that monitors and controls incoming and outgoing network traffic based on predefined security rules.",
+      "analogy": "Like a security guard at a building entrance — it checks everyone coming in and going out against an allowed list.",
+      "examples": ["Windows Defender Firewall", "Hardware firewalls in office routers"],
+      "related": ["Network Security", "Intrusion Detection", "Antivirus"],
+      "severity": "low"
+    },
+    {
+      "term": "Encryption",
+      "definition": "The process of converting data into an unreadable format (ciphertext) using an algorithm and key, so only authorised parties with the correct key can read it.",
+      "analogy": "Like writing a message in a secret code — only someone with the codebook can understand it.",
+      "examples": ["HTTPS websites encrypt your connection", "WhatsApp uses end-to-end encryption", "Full-disk encryption on laptops"],
+      "related": ["HTTPS", "VPN", "End-to-End Encryption"],
+      "severity": "low"
+    },
+    {
+      "term": "Zero-Day Vulnerability",
+      "definition": "A software security flaw that is unknown to the vendor and for which no patch yet exists. Attackers can exploit it before developers have a chance to fix it.",
+      "analogy": "Like finding a secret passage into a bank vault that even the bank designers didn't know existed.",
+      "examples": ["Log4Shell (2021)", "EternalBlue (exploited in WannaCry)"],
+      "related": ["Vulnerability", "Patch Management", "Exploit"],
+      "severity": "critical"
+    },
+    {
+      "term": "Identity Theft",
+      "definition": "The fraudulent acquisition and use of a person's private identifying information, usually for financial gain.",
+      "analogy": "Someone stealing your name, address, and ID number to pretend to be you — opening bank accounts, taking loans, or committing crimes in your name.",
+      "examples": ["Using stolen SSN to file false tax returns", "Opening credit cards with a victim's personal details"],
+      "related": ["Data Breach", "Phishing", "Social Engineering"],
+      "severity": "critical"
+    },
+    {
+      "term": "HTTPS",
+      "definition": "Hypertext Transfer Protocol Secure — the secure version of HTTP that encrypts data between your browser and a website using TLS/SSL.",
+      "analogy": "HTTP is like sending a postcard anyone can read; HTTPS is like sending a sealed, tamper-proof envelope.",
+      "examples": ["https://www.yourbank.com (secure)", "http://fakesite.com (insecure, avoid entering sensitive data)"],
+      "related": ["Encryption", "TLS", "SSL"],
+      "severity": "low"
+    },
+    {
+      "term": "Trojan Horse",
+      "definition": "Malware disguised as legitimate software. Once installed, it can give attackers remote access, steal data, or install additional malware.",
+      "analogy": "Just like the ancient Greek story — it looks like a gift (a useful app or file), but hides a threat inside.",
+      "examples": ["Fake antivirus software that is itself malware", "Pirated software bundled with spyware"],
+      "related": ["Malware", "Backdoor", "Remote Access Trojan"],
+      "severity": "high"
+    },
+    {
+      "term": "DDoS Attack",
+      "definition": "Distributed Denial of Service — an attack that overwhelms a website or service with massive amounts of traffic from many sources, making it unavailable to legitimate users.",
+      "analogy": "Like thousands of people calling a restaurant's phone simultaneously — the lines are jammed and real customers can't get through.",
+      "examples": ["Mirai botnet attack taking down major DNS providers (2016)", "Online gaming services taken offline during peak hours"],
+      "related": ["Botnet", "Network Security"],
+      "severity": "high"
+    },
+    {
+      "term": "Patch Management",
+      "definition": "The process of regularly applying updates and security fixes (patches) to software and operating systems to close known vulnerabilities.",
+      "analogy": "Like fixing the locks on your house every time a locksmith discovers a new way they could be picked.",
+      "examples": ["Windows Update installing security patches", "Updating your phone's operating system"],
+      "related": ["Zero-Day", "Vulnerability", "Software Update"],
+      "severity": "medium"
+    },
+    {
+      "term": "Brute Force Attack",
+      "definition": "An attack method where an attacker systematically tries every possible combination of passwords or keys until the correct one is found.",
+      "analogy": "Like trying every key on a giant keyring until one opens the lock.",
+      "examples": ["Automated tools guessing common passwords against login forms", "Cracking weak Wi-Fi passwords"],
+      "related": ["Password", "Dictionary Attack", "Account Lockout"],
+      "severity": "high"
+    }
+  ],
+  "behavior_nudges": [
+    "Enable two-factor authentication (2FA) on your email account today — it takes under 2 minutes and dramatically increases your security.",
+    "Check if your email has been in a data breach at haveibeenpwned.com — it's free and takes 10 seconds.",
+    "Lock your screen every time you walk away from your computer (Win+L on Windows, Control+Command+Q on Mac).",
+    "Use a different password for every account — a free password manager like Bitwarden makes this easy.",
+    "Before clicking any link, hover over it to see where it actually leads. Does the URL match what you'd expect?",
+    "Update your operating system and apps regularly — many attacks exploit known bugs that patches already fix.",
+    "Be sceptical of any message that creates urgency or threatens consequences if you don't act immediately.",
+    "Never share your OTP (one-time password) with anyone — legitimate companies will never ask for it.",
+    "Back up your important files regularly to an external drive or cloud service. This protects you from ransomware.",
+    "On public Wi-Fi? Use a VPN or avoid accessing sensitive accounts like banking or email.",
+    "Review the permissions your apps have — does that game really need access to your microphone?",
+    "Enable automatic updates on your phone — security patches are often bundled in routine updates.",
+    "If a deal, offer, or prize sounds too good to be true, it almost certainly is.",
+    "Use a strong, unique passphrase for your password manager master password — this is the most important password you have.",
+    "Regularly review the devices and apps connected to your Google, Apple, or Microsoft account and remove any you don't recognise.",
+    "Set up a recovery email and phone number for your important accounts so you can regain access if locked out.",
+    "Be careful what personal information you share on social media — attackers use it to craft convincing phishing messages.",
+    "When in doubt, go directly to a company's official website by typing the URL yourself rather than clicking any link."
+  ],
+  "threat_cards": [
+    {
+      "type": "ransomware",
+      "title": "Ransomware",
+      "icon": "🔒",
+      "description": "Malware that encrypts your files and demands a payment to restore access.",
+      "warning_signs": ["Files you cannot open with unfamiliar extensions (.locked, .encrypted)", "Ransom note appearing on screen", "Unusually slow computer", "Antivirus disabled unexpectedly"],
+      "prevention": ["Keep regular offline backups (3-2-1 rule)", "Never open unexpected email attachments", "Keep software patched and updated", "Use reputable antivirus software"],
+      "if_infected": ["Disconnect from the internet immediately", "Do NOT pay the ransom (no guarantee of recovery)", "Report to your local cybercrime authority", "Restore from a clean backup"]
+    },
+    {
+      "type": "phishing",
+      "title": "Phishing",
+      "icon": "🎣",
+      "description": "Fraudulent messages designed to trick you into revealing sensitive information or clicking malicious links.",
+      "warning_signs": ["Generic greeting ('Dear Customer')", "Urgency or threats ('Your account will be closed')", "Suspicious or misspelled sender domain", "Links that don't match the supposed sender", "Requests for passwords, PINs, or payment details"],
+      "prevention": ["Check sender email addresses carefully", "Hover over links before clicking", "Enable spam filters", "Use MFA so stolen passwords alone can't compromise accounts"],
+      "if_infected": ["Change passwords for any accounts you logged into", "Enable MFA immediately", "Check bank/credit card statements for unauthorised transactions", "Report the phishing email to your provider"]
+    },
+    {
+      "type": "malware",
+      "title": "Malware",
+      "icon": "🦠",
+      "description": "Any malicious software including viruses, trojans, spyware, and adware designed to harm or compromise your device.",
+      "warning_signs": ["Computer is unusually slow", "Unexpected pop-up advertisements", "Browser redirecting to strange websites", "Programs opening or closing on their own", "Unknown programs in your app list"],
+      "prevention": ["Only download software from official sources", "Keep antivirus software up to date", "Scan USB drives before opening files", "Be cautious with email attachments and downloads"],
+      "if_infected": ["Run a full antivirus scan immediately", "Disconnect from the internet", "Consider a full system restore if infection is severe", "Change all passwords from a clean device"]
+    },
+    {
+      "type": "social_engineering",
+      "title": "Social Engineering",
+      "icon": "🎭",
+      "description": "Psychological manipulation that tricks people into revealing information or performing actions that compromise security.",
+      "warning_signs": ["Unsolicited contact from 'support', 'IT', or 'the bank'", "Pressure to act quickly or secretly", "Requests that bypass normal procedures", "Too-good-to-be-true offers"],
+      "prevention": ["Verify identities through official channels before acting", "Establish a code word with family for emergency calls", "Be sceptical of any unsolicited urgent request", "Follow your organisation's security procedures even under pressure"],
+      "if_infected": ["If you gave information: change passwords and enable MFA", "Contact your bank immediately if financial details were shared", "Report the incident to relevant authorities", "Inform others who may be targeted"]
+    },
+    {
+      "type": "identity_theft",
+      "title": "Identity Theft",
+      "icon": "🪪",
+      "description": "When someone steals your personal information to impersonate you, typically for financial fraud.",
+      "warning_signs": ["Unexplained charges on bank statements", "Bills or calls about accounts you didn't open", "Missing expected post or bills", "Rejected credit applications with no explanation"],
+      "prevention": ["Shred documents with personal information", "Monitor your credit report regularly", "Use strong, unique passwords", "Enable fraud alerts with your bank"],
+      "if_infected": ["Place a fraud alert with credit bureaus", "Review all financial statements immediately", "File a report with police and relevant authorities", "Contact each affected company directly"]
+    }
+  ]
+}
